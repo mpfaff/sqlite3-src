@@ -21,6 +21,8 @@ links = "sqlite3"
 [features]
 bundled = []
 
+ext-spellfix = ["bundled"]
+
 [build-dependencies]
 cc = "1.0"
 pkg-config = "0.3"
