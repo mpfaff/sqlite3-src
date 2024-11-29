@@ -5,7 +5,7 @@ fn main() {
         let mut build = cc::Build::new();
         build.file("source/sqlite3.c");
         if cfg!(feature = "ext-spellfix") {
-            build.file("spellfix.c");
+            build.file("source/spellfix.c");
         }
         for (name, value) in env::vars() {
             if name.starts_with("SQLITE_") {
